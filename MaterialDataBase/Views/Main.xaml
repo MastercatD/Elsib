@@ -14,7 +14,7 @@
 
         <Grid x:Name="Buttons" Height="60" Margin="15,10,15,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Button Content="Добавить" Command="{Binding ShowWindowCommand}" Margin="25,20,0,20" HorizontalAlignment="Left" Width="70"/>
-            <Button Content="Выход" Margin="0,20,25,20" HorizontalAlignment="Right" Width="70"/>
+            <Button Content="Выход" Margin="0,20,25,20" HorizontalAlignment="Right" Width="70" Click="Button_Click"/>
             <Button Content="Удалить"  Command="{Binding RemoveCommand}" Margin="120,20" Width="70"/>
         </Grid>
         <ListView x:Name="MaterialList" ItemsSource="{Binding Materials}" Margin="15,75,15,15" Padding="0" Grid.ColumnSpan="2" SelectedIndex="{Binding selectedIndex}">

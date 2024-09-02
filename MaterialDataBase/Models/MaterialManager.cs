@@ -9,6 +9,7 @@ namespace MaterialDataBase.Models
 {
 		public class MaterialManager
 		{
+				public static int _code = 2;
 				public static ObservableCollection<Material> _databaseUsers = new ObservableCollection<Material>() { new Material(0, "сталь", 1000), new Material(1, "алюминий", 500) };
 
 				public static ObservableCollection<Material> GetMaterial()
@@ -17,10 +18,11 @@ namespace MaterialDataBase.Models
 
 				}
 
-
+				public static int GetCode() {  return _code; }
 				public static void AddMaterial(Material material)
 				{
 						_databaseUsers.Add(material);
+						_code++;
 				}
 				public static void RemoveMaterial(int index)
 				{

@@ -20,3 +20,4 @@ C:\Users\lenik\source\repos\MaterialDataBase\MaterialDataBase\obj\Debug\net8.0-w
 C:\Users\lenik\source\repos\MaterialDataBase\MaterialDataBase\obj\Debug\net8.0-windows\Views\Main.baml
 C:\Users\lenik\source\repos\MaterialDataBase\MaterialDataBase\obj\Debug\net8.0-windows\Views\AddMaterial.g.cs
 C:\Users\lenik\source\repos\MaterialDataBase\MaterialDataBase\obj\Debug\net8.0-windows\Views\AddMaterial.baml
+C:\Users\lenik\source\repos\MaterialDataBase\MaterialDataBase\obj\Debug\net8.0-windows\MaterialDataBase.sourcelink.json

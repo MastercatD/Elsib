@@ -16,7 +16,7 @@ namespace MaterialDataBase.ViewModel
 				public ICommand AddMaterialCommand { get; set; }
 				public ICommand CloseMaterialWinCommand { get; set; }
 
-				public int code { get; set; }
+				public int code { get; set; } = MainViewModel.codeCounter;
 				public string name { get; set; }
 				public int cost { get; set; }
 
@@ -34,7 +34,7 @@ namespace MaterialDataBase.ViewModel
 
 				private void CloseMaterialWindow(object obj)
 				{
-						MainViewModel.addMaterialWin.Close();
+						MainViewModel.CloseMaterialWin();
 				}
 
 				private bool CanAddMaterial(object obj)
@@ -46,8 +46,8 @@ namespace MaterialDataBase.ViewModel
 				{
 
 						MaterialManager.AddMaterial(new Material(code, name, cost));
-						MainViewModel.addMaterialWin.Close();
-						
+						MainViewModel.CloseMaterialWin();
+
 
 
 				}

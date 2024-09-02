@@ -15,7 +15,9 @@ namespace MaterialDataBase.ViewModel
 		public class MainViewModel
 		{
 				static private AddMaterial _addMaterialWin;
+				static private int _codeCounter;
 				static public AddMaterial addMaterialWin { get => _addMaterialWin; }
+				static public int codeCounter { get => _codeCounter; }
 				private int _selectedIndex;
 				public int selectedIndex { get => _selectedIndex; set => _selectedIndex = value; }
 				public ObservableCollection<Material> Materials { get; set; }
@@ -30,8 +32,15 @@ namespace MaterialDataBase.ViewModel
 						Materials = MaterialManager.GetMaterial();
 						ShowWindowCommand = new RelayCommand(ShowWindow, CanShowWindow);
 						RemoveCommand = new RelayCommand(Remove, CanRemove);
+						_codeCounter = MaterialManager.GetCode();
 				}
 
+				public static void CloseMaterialWin()
+				{
+						_addMaterialWin.Close();
+						_addMaterialWin = null;
+						_codeCounter = MaterialManager.GetCode();
+				}
 				private bool CanRemove(object obj)
 				{
 						if (selectedIndex == -1) return false;
@@ -57,11 +66,11 @@ namespace MaterialDataBase.ViewModel
 								_addMaterialWin = new AddMaterial();
 								_addMaterialWin.Owner = mainWindow;
 								_addMaterialWin.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-						}
-						
-								_addMaterialWin.Show();
-					
 
+
+								_addMaterialWin.Show();
+
+						}
 				}
 		}
 }

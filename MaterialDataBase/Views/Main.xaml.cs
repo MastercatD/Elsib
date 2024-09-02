@@ -19,30 +19,20 @@ using System.Windows.Shapes;
 
 namespace MaterialDataBase.Views
 {
-	public partial class Main : Window
-	{
-		public Main()
+		public partial class Main : Window
 		{
-			InitializeComponent();
-			MainViewModel mainViewModel = new MainViewModel();
-			this.DataContext = mainViewModel;
+				public Main()
+				{
+						InitializeComponent();
+						MainViewModel mainViewModel = new MainViewModel();
+						this.DataContext = mainViewModel;
+				}
+
+				private void Button_Click(object sender, RoutedEventArgs e)
+				{
+						this.Close();
+				}
+
+
 		}
-				/*
-		private void FilterTextBox_TextChanged(object sender, TextChangedEventArgs e)
-		{
-
-			UserList.Items.Filter = FilterMethod;
-
-
-		}
-
-		private bool FilterMethod(object obj)
-		{
-			var user = (Material)obj;
-
-			return user.Name.Contains(FilterTextBox.Text, StringComparison.OrdinalIgnoreCase);
-
-
-		}*/
-	}
 }
