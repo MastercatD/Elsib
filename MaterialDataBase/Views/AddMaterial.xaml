@@ -1,0 +1,30 @@
+﻿<Window x:Class="MaterialDataBase.Views.AddMaterial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialDataBase.Views"
+        mc:Ignorable="d"
+        Title="AddMaterialWindow" Height="147" Width="259">
+    <Grid Height="75" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="126"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Код" Grid.Row="0" Grid.Column="0"/>
+        <Label Content="Наименование" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Стоимость" Grid.Row="2" Grid.Column="0"/>
+        <TextBox x:Name="Code" Text="{Binding code}" Grid.Row="0" Grid.Column="1"/>
+        <TextBox x:Name="Name" Text="{Binding name}" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="Cost" Text="{Binding cost}" Grid.Row="2" Grid.Column="1"/>
+        <Button x:Name="Add" Content="Добавить" Command="{Binding AddMaterialCommand}" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="24,35,0,-30" Grid.Row="2" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Cancel" Content="Отмена" Command="{Binding CloseMaterialWinCommand}" HorizontalAlignment="Left" Height="20" Margin="20,35,0,-30" Grid.Row="2" VerticalAlignment="Top" Width="80"/>
+
+
+    </Grid>
+</Window>
