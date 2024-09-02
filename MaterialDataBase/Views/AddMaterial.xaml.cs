@@ -23,8 +23,8 @@ namespace MaterialDataBase.Views
 				{
 						
 						InitializeComponent();
-						AddMaterialViewModel addUserViewModel = new AddMaterialViewModel();
-						this.DataContext = addUserViewModel;
+						AddMaterialViewModel addMaterialViewModel = new AddMaterialViewModel();
+						this.DataContext = addMaterialViewModel;
 
 				}
 		}

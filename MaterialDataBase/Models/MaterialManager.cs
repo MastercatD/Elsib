@@ -9,24 +9,24 @@ namespace MaterialDataBase.Models
 {
 		public class MaterialManager
 		{
-				public static int _code = 2;
-				public static ObservableCollection<Material> _databaseUsers = new ObservableCollection<Material>() { new Material(0, "сталь", 1000), new Material(1, "алюминий", 500) };
+				private static int _code = 2;
+				private static ObservableCollection<Material> _databaseMaterials = new ObservableCollection<Material>() { new Material(0, "сталь", 1000), new Material(1, "алюминий", 500) };
 
 				public static ObservableCollection<Material> GetMaterial()
 				{
-						return _databaseUsers;
+						return _databaseMaterials;
 
 				}
 
 				public static int GetCode() {  return _code; }
 				public static void AddMaterial(Material material)
 				{
-						_databaseUsers.Add(material);
+						_databaseMaterials.Add(material);
 						_code++;
 				}
 				public static void RemoveMaterial(int index)
 				{
-						_databaseUsers.RemoveAt(index);
+						_databaseMaterials.RemoveAt(index);
 				}
 		}
 }
