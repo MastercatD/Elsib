@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenik\\source\\repos\\MaterialDataBase\\MaterialDataBase\\MaterialDataBase.csproj",
+      "projectUniqueName": "C:\\Users\\lenik\\Desktop\\Elsib\\MaterialDataBase\\MaterialDataBase.csproj",
       "projectName": "MaterialDataBase",
-      "projectPath": "C:\\Users\\lenik\\source\\repos\\MaterialDataBase\\MaterialDataBase\\MaterialDataBase.csproj",
+      "projectPath": "C:\\Users\\lenik\\Desktop\\Elsib\\MaterialDataBase\\MaterialDataBase.csproj",
       "packagesPath": "C:\\Users\\lenik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenik\\source\\repos\\MaterialDataBase\\MaterialDataBase\\obj\\",
+      "outputPath": "C:\\Users\\lenik\\Desktop\\Elsib\\MaterialDataBase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenik\\AppData\\Roaming\\NuGet\\NuGet.Config",
